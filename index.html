@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aegan Analytics</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
       margin: 0;
@@ -52,133 +55,196 @@
     }
     ul { padding-left: 1.2rem; }
     li { margin-bottom: 0.4rem; }
-  </style>
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #002244;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 4px;
+      display: none;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form input[type="submit"] {
+      background-color: #002244;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+      .fade-in {
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .highlight-stats {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .highlight-stats div {
+      text-align: center;
+    }
+    .highlight-stats h3 {
+      margin: 0;
+      color: #002244;
+      font-size: 2rem;
+    }
+    .highlight-stats p {
+      margin: 0;
+      color: #555;
+    }
+</style>
 </head>
 <body>
-  <header>
+  <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-angle-up"></i></button>
+  <header style="background: url('banner.jpg') center center/cover no-repeat; position: relative;">
+  <div style="background: rgba(0, 34, 68, 0.85); padding: 2rem 1rem; color: white;" class="fade-in">
     <img src="8fd41d6a-f953-4833-878d-3a72ba28a51d.png" alt="Aegan Logo" />
     <h1>Aegan Analytics</h1>
-    <p class="slogan">Turning Data Into Decisions.<br>
-    Where Insights Drive Innovation.<br>
-    From Raw Data to Real Results.<br>
-    Empowering Smarter Business Moves.<br>
-    Decode. Discover. Deliver.<br>
-    Automate Smart. Analyze Smarter.<br>
-    Precision in Every Process.<br>
-    Analytics that Work While You Sleep.<br>
-    Workflows Simplified. Decisions Amplified.<br>
-    AI-Powered Analytics. Human-Level Clarity.</p>
-  </header>
+    <p class="slogan">Aegan Analytics is a forward-thinking data intelligence firm transforming raw data into actionable insights through automation and AI-powered analytics. From humble beginnings to impactful enterprise dashboards, we’ve delivered solutions across industries that simplify workflows, elevate decision-making, and unlock growth. With a vision for the future, we are committed to enabling smarter businesses and shaping tomorrow through meaningful data stories.</p>
+  </div>
+</header>
 
-  <section>
+  <nav class="w3-bar w3-black w3-hide-small w3-center">
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#training" class="w3-bar-item w3-button">Trainings</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </nav>
+
+  <section class="highlight-stats">
+  <div>
+    <h3>2500+</h3>
+    <p>Reports Automated</p>
+  </div>
+  <div>
+    <h3>15+</h3>
+    <p>Industries Served</p>
+  </div>
+  <div>
+    <h3>4.5 FTE</h3>
+    <p>Saved via Automation</p>
+  </div>
+</section>
+
+<section id="projects">
     <h2>Our Delivered Projects</h2>
-
-    <div class="project">
-      <h3>1. Dynamic Inventory Dashboard</h3>
-      <img src="project1.PNG" alt="Inventory Dashboard">
-      <p>This Power BI dashboard helps in tracking SKU-wise inventory value, turnover ratio, and vendor analysis with ABC and XYZ classifications. It allows dynamic slicing for better forecasting and stock movement insights.</p>
-    </div>
-
-    <div class="project">
-      <h3>2. Supply Chain Analytics</h3>
-      <img src="project2.PNG" alt="Supply Chain Dashboard">
-      <p>Built for end-to-end revenue and cost tracking, this dashboard visualizes order-level inventory trends, profit breakdown by products, and channels like Wholesale, Export, and Distributor. Perfect for logistics decision-making.</p>
-    </div>
-
-    <div class="project">
-      <h3>3. Banking Loan Report</h3>
-      <img src="project3.PNG" alt="Loan Report">
-      <p>A detailed summary dashboard of loan applications, funded vs received amounts, good vs bad loans, and interest/DTI metrics. Helps financial institutions manage risk and profitability in lending operations.</p>
-    </div>
-
-    <div class="project">
-      <h3>4. Cryptocurrency Dashboard</h3>
-      <img src="project4.PNG" alt="Crypto Dashboard">
-      <p>This dashboard captures market cap trends of multiple cryptocurrencies, tracks high/low/average prices, and visualizes time-wise market movement — valuable for investors and analysts in crypto finance.</p>
-    </div>
-
-    <div class="project">
-      <h3>5. HR Insights & Trends</h3>
-      <img src="project5.PNG" alt="HR Dashboard">
-      <p>Visualizes attrition by department, age, gender, salary band, and years of service. HR leaders can make strategic retention decisions with breakdowns by job roles and education demographics.</p>
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <div class="project">
+          <h3>Inventory Dashboard</h3>
+          <img src="project1.PNG" alt="Inventory Dashboard">
+          <p>Provides real-time tracking of inventory levels, turnover, and stock value with vendor-wise segmentation.</p>
+        </div>
+        <div class="project">
+          <h3>Loan Portfolio Tracker</h3>
+          <img src="project3.PNG" alt="Loan Tracker">
+          <p>Summarizes loan status, funding trends, and financial health indicators across various customer segments.</p>
+        </div>
+        <div class="project">
+          <h3>HR Analytics Dashboard</h3>
+          <img src="project5.PNG" alt="HR Dashboard">
+          <p>Highlights attrition, salary analysis, and department-wise breakdowns to empower HR decisions.</p>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="project">
+          <h3>Supply Chain Analytics</h3>
+          <img src="project2.PNG" alt="Supply Chain Dashboard">
+          <p>Visualizes end-to-end product flow from procurement to delivery across multiple sales channels.</p>
+        </div>
+        <div class="project">
+          <h3>Crypto Market Insights</h3>
+          <img src="project4.PNG" alt="Crypto Dashboard">
+          <p>Monitors crypto prices, trends, and volatility using time-based visualizations for investor decision-making.</p>
+        </div>
+        <div class="project">
+          <h3>Student Evaluation Analysis</h3>
+          <img src="project6.PNG" alt="Evaluation Dashboard">
+          <p>Tracks student performance across gender, period, and assessment level. Helps school districts optimize learning impact.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
+  <section id="about">
+  <h2>About the Founder</h2>
+  <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 2rem;">
+    <img src="3xhumed-Mega-Games-Pack-22-The-Godfather-1.ico" alt="Aravind Paraniraja - CEO" style="width: 180px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+    <div>
+      <p><strong>Aravind Paraniraja</strong>, founder of Aegan Analytics, is a seasoned Power BI Developer and automation expert with 12+ years of experience in transforming business processes through insightful dashboards and efficient workflows.</p>
+      <p>Starting his journey with MS Access and VBA, Aravind mastered tools like SQL, Power BI, Power Automate, and Azure Data Factory. He has worked with clients across 3 key industries, delivering enterprise-grade analytics and saving over 4.5 FTEs through smart automation.</p>
+      <p>As the visionary behind Aegan Analytics, Aravind aims to empower startups and enterprises with actionable intelligence, seamless automation, and meaningful digital transformation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="training">
     <h2>Trainings & Workshops – Power BI</h2>
-
-    <h3>✅ Session 1: Power BI Desktop Overview + Data Loading</h3>
     <ul>
-      <li>Intro to Power BI Interface</li>
-      <li>Import data from Excel, CSV</li>
-      <li>Overview of Power Query</li>
-      <li>Clean/shape data (remove nulls, change types)</li>
-      <li>Rename and manage columns</li>
-      <li>📌 Hands-on: Load a sample sales dataset and clean it</li>
+      <li>✅ Session 1: Power BI Desktop Overview + Data Loading</li>
+      <li>✅ Session 2: Power Query Editor Deep Dive</li>
+      <li>✅ Session 3: Data Modeling & Relationships</li>
+      <li>✅ Session 4: Building Powerful Visuals</li>
+      <li>✅ Session 5: DAX Basics – Measures & Calculations</li>
+      <li>✅ Session 6: Intermediate DAX + Time Intelligence</li>
+      <li>✅ Session 7: Putting It All Together (Capstone)</li>
     </ul>
+    <p>Each session includes real-world examples and hands-on dashboards. Contact us for private or corporate batches.</p>
+  </section>
 
-    <h3>✅ Session 2: Power Query Editor Deep Dive</h3>
-    <ul>
-      <li>Merge vs Append queries</li>
-      <li>Column transformations</li>
-      <li>Group By, Conditional Column</li>
-      <li>Unpivot and Pivot</li>
-      <li>Data profiling, query steps</li>
-      <li>📌 Hands-on: Combine multiple sheets into one clean table</li>
-    </ul>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:aegananalytics@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-    <h3>✅ Session 3: Data Modeling & Relationships</h3>
-    <ul>
-      <li>Star schema basics</li>
-      <li>Managing relationships</li>
-      <li>Creating a Calendar Table</li>
-      <li>Sort by column, hide fields</li>
-      <li>Best practices in model design</li>
-      <li>📌 Hands-on: Build a working model with clean schema</li>
-    </ul>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-    <h3>✅ Session 4: Building Powerful Visuals</h3>
-    <ul>
-      <li>Bar, Line, Pie, Matrix, Slicer, Cards</li>
-      <li>Drill-down & tooltips</li>
-      <li>Basic interactivity</li>
-      <li>Visual formatting (colors, borders, alignment)</li>
-      <li>Creating a consistent layout</li>
-      <li>📌 Hands-on: Dashboard with 5–6 visuals + slicers</li>
-    </ul>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message..."></textarea>
 
-    <h3>✅ Session 5: DAX Basics – Measures & Calculations</h3>
-    <ul>
-      <li>Calculated column vs Measure</li>
-      <li>SUM, AVERAGE, COUNTROWS</li>
-      <li>IF, SWITCH logic</li>
-      <li>Using Variables</li>
-      <li>Dynamic Titles and KPIs</li>
-      <li>📌 Hands-on: Build “Total Sales”, “Average Quantity”, “High/Low Category” measures</li>
-    </ul>
-
-    <h3>✅ Session 6: Intermediate DAX + Time Intelligence</h3>
-    <ul>
-      <li>CALCULATE(), FILTER()</li>
-      <li>PREVIOUSMONTH, YTD, MTD</li>
-      <li>% Growth, Running Total</li>
-      <li>Using a disconnected slicer for “What-if” analysis</li>
-      <li>📌 Hands-on: Create a YoY comparison dashboard</li>
-    </ul>
-
-    <h3>✅ Session 7: Putting It All Together (Capstone)</h3>
-    <ul>
-      <li>Full project walk-through</li>
-      <li>Data loading, model, DAX, visuals</li>
-      <li>Design cleanup</li>
-      <li>Export to PDF/PPT</li>
-      <li>Tips for client-facing reports</li>
-      <li>📌 Deliverable: Complete business-ready Power BI report</li>
-    </ul>
+      <input type="submit" value="Send Message">
+    </form>
+    <p style="margin-top: 20px;">Visit our full portfolio: <a href="https://aravind1089.github.io/aravind-portfolio/" target="_blank">Aravind's Portfolio</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Aegan Analytics | <a href="https://aravind1089.github.io/aravind-portfolio/" style="color: #aad;">Contact Us</a></p>
+    <p>© 2025 Aegan Analytics | All rights reserved</p>
   </footer>
+
+  <script>
+    const backToTop = document.getElementById("back-to-top");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    function goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>
