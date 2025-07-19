@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegan Analytics & Automation - Training Center</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate */
+            color: #334155; /* Slate 700 */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #1e3a8a, #3b82f6); /* Dark Blue to Blue */
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out;
+        }
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out;
+        }
+        .section-title {
+            @apply text-4xl font-bold text-center mb-12 text-gray-800;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">Aegan Analytics & Automation</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#courses" class="text-gray-600 hover:text-blue-600 transition duration-300">Courses</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition duration-300">Pricing</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <a href="#home" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#courses" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Courses</a>
+            <a href="#pricing" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Pricing</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="gradient-bg text-white py-20 md:py-32 text-center rounded-b-xl shadow-lg">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Unlock Your Data Potential with <br>Aegan Analytics & Automation
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+                    Master Power BI, Macro VBA, and MS Access to drive insights and automate your business processes.
+                </p>
+                <a href="#courses" class="btn-primary">Explore Courses</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Aegan Analytics & Automation</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://placehold.co/600x400/e0f2fe/1e3a8a?text=Your+Expertise" alt="About Us" class="rounded-xl shadow-lg w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2 text-lg leading-relaxed text-gray-700">
+                        <p class="mb-4">
+                            Welcome to Aegan Analytics & Automation, founded by a seasoned Data Professional with over 12 years of experience in data platforms, reporting automation, and business intelligence. My journey began with hands-on work in MS Access, Excel VBA, and SQL, evolving into a specialized career as a Power BI Developer.
+                        </p>
+                        <p class="mb-4">
+                            For the past 6 years, I’ve led impactful BI initiatives across industries, streamlining reporting processes, driving insights, and enabling data-driven decision-making. At Accenture, I currently lead a team of developers, handling 12+ contracts and automating 250+ reports using Power BI, Power Automate, and Power Apps.
+                        </p>
+                        <p class="mb-4">
+                            My strengths lie in zero-touch automation, dashboard design, stakeholder collaboration, and performance optimization. I am also skilled in prompt engineering and integrating AI tools like Copilot to enhance analytics and incident management.
+                        </p>
+                        <p>
+                            Passionate about continuous learning, I am expanding my expertise into Python, Azure Databricks, and machine learning to bring predictive capabilities to service management data. My long-term vision is to build my own analytics consulting brand—Aegan Analytics & Automation—to solve real-world business problems using intelligent automation and clean data storytelling. Join us to transform your data skills!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-16 md:py-24 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Comprehensive Courses</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Power BI Course Card -->
+                    <div class="card">
+                        <h3 class="text-3xl font-bold text-blue-700 mb-4">Power BI Masterclass</h3>
+                        <p class="text-gray-600 mb-4">Transform raw data into meaningful insights and interactive dashboards.</p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                            <li>Data Connection & Transformation (Power Query)</li>
+                            <li>Data Modeling & DAX Fundamentals</li>
+                            <li>Interactive Dashboard Design</li>
+                            <li>Data Storytelling & Visualization Best Practices</li>
+                            <li>Power BI Service & Collaboration</li>
+                            <li>Advanced DAX & Performance Optimization</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-2"><strong>Duration:</strong> 40 Hours (Flexible Sessions)</p>
+                        <p class="text-sm text-gray-500"><strong>Target Audience:</strong> Aspiring BI Developers, Data Analysts, Business Users</p>
+                        <a href="#contact" class="mt-6 inline-block btn-primary text-sm">Enroll Now</a>
+                    </div>
+
+                    <!-- Macro VBA Course Card -->
+                    <div class="card">
+                        <h3 class="text-3xl font-bold text-blue-700 mb-4">Excel Macro VBA Automation</h3>
+                        <p class="text-gray-600 mb-4">Automate repetitive tasks in Excel and boost your productivity.</p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                            <li>VBA Editor & Basic Syntax</li>
+                            <li>Working with Cells, Ranges, and Worksheets</li>
+                            <li>Loops, Conditions, and Error Handling</li>
+                            <li>User Forms & Controls</li>
+                            <li>Automating Data Entry, Reporting, and Analysis</li>
+                            <li>Integrating with Other Office Applications</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-2"><strong>Duration:</strong> 30 Hours (Flexible Sessions)</p>
+                        <p class="text-sm text-gray-500"><strong>Target Audience:</strong> Office Professionals, Data Entry Specialists, Anyone seeking Excel Automation</p>
+                        <a href="#contact" class="mt-6 inline-block btn-primary text-sm">Enroll Now</a>
+                    </div>
+
+                    <!-- MS Access Course Card -->
+                    <div class="card">
+                        <h3 class="text-3xl font-bold text-blue-700 mb-4">MS Access Database Management</h3>
+                        <p class="text-gray-600 mb-4">Design, manage, and query relational databases with ease.</p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                            <li>Database Fundamentals & Table Design</li>
+                            <li>Relationships, Primary & Foreign Keys</li>
+                            <li>Queries (Select, Action, Crosstab)</li>
+                            <li>Forms for Data Entry & Display</li>
+                            <li>Reports for Professional Output</li>
+                            <li>Introduction to Macros & VBA in Access</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mb-2"><strong>Duration:</strong> 25 Hours (Flexible Sessions)</p>
+                        <p class="text-sm text-gray-500"><strong>Target Audience:</strong> Small Business Owners, Data Administrators, Students</p>
+                        <a href="#contact" class="mt-6 inline-block btn-primary text-sm">Enroll Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Flexible Pricing Plans</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Pricing Card: Power BI -->
+                    <div class="card text-center border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Power BI Masterclass</h3>
+                        <p class="text-4xl font-extrabold text-blue-600 mb-6">$499</p>
+                        <p class="text-gray-600 mb-6">Per Course</p>
+                        <ul class="list-none text-gray-700 mb-8 space-y-3">
+                            <li>✅ 40 Hours of Live Training</li>
+                            <li>✅ Project-Based Learning</li>
+                            <li>✅ Certification of Completion</li>
+                            <li>✅ Post-Course Support</li>
+                            <li>✅ Access to Learning Resources</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                    </div>
+
+                    <!-- Pricing Card: Macro VBA -->
+                    <div class="card text-center border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Excel Macro VBA</h3>
+                        <p class="text-4xl font-extrabold text-blue-600 mb-6">$349</p>
+                        <p class="text-gray-600 mb-6">Per Course</p>
+                        <ul class="list-none text-gray-700 mb-8 space-y-3">
+                            <li>✅ 30 Hours of Live Training</li>
+                            <li>✅ Practical Automation Exercises</li>
+                            <li>✅ Certification of Completion</li>
+                            <li>✅ Post-Course Support</li>
+                            <li>✅ Access to Learning Resources</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                    </div>
+
+                    <!-- Pricing Card: MS Access -->
+                    <div class="card text-center border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">MS Access Database</h3>
+                        <p class="text-4xl font-extrabold text-blue-600 mb-6">$299</p>
+                        <p class="text-gray-600 mb-6">Per Course</p>
+                        <ul class="list-none text-gray-700 mb-8 space-y-3">
+                            <li>✅ 25 Hours of Live Training</li>
+                            <li>✅ Hands-on Database Projects</li>
+                            <li>✅ Certification of Completion</li>
+                            <li>✅ Post-Course Support</li>
+                            <li>✅ Access to Learning Resources</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                    </div>
+
+                </div>
+                <div class="text-center mt-16">
+                    <p class="text-xl text-gray-700">Looking for a custom package or corporate training?</p>
+                    <a href="#contact" class="text-blue-600 hover:underline font-medium">Contact us for a personalized quote!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
+                    <p class="text-lg text-gray-700 mb-8 text-center">
+                        Have questions about our courses or want to discuss your training needs? Fill out the form below or reach out directly.
+                    </p>
+                    <form class="space-y-6" action="mailto:aegananalytics@gmail.com" method="POST" enctype="text/plain">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Tell us about your training needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                    </form>
+                    <div class="mt-10 text-center text-gray-700">
+                        <p class="mb-2"><strong>Email:</strong> aegananalytics@gmail</p>
+                                              
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-xl shadow-inner">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Aegan Analytics & Automation. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed with passion for data-driven success.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // The form submission now uses mailto:
+        // No need for a custom JS handler for form submission if using mailto:
+        // The previous JS for form submission (console.log, messageBox) has been removed
+        // as mailto: handles the action directly.
+    </script>
+
+</body>
+</html>
